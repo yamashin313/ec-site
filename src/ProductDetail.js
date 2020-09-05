@@ -11,7 +11,9 @@ class ProductDetail extends React.Component {
       .then((res) => {
         products = res;
       })
-      .catch(console.error);
+      .catch((error) => {
+        console.log(error);
+      });
     */
     product = [
       { id: '1', name: 'diamond', price: '12345'}
