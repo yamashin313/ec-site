@@ -1,5 +1,6 @@
 import React from 'react'
 import Cookies from 'universal-cookie';
+import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
 
 class Top extends React.Component {
   render(){
@@ -8,7 +9,18 @@ class Top extends React.Component {
     console.log(cookies.get('myCat'));
     return(
       <div>
-        <h1>Top</h1>
+        <Container>
+          <Row className="mt-4">
+            <Col>
+              <Jumbotron>
+                <h1>test</h1>
+                <p>
+                  testtesttest
+                </p>
+              </Jumbotron>
+            </Col>
+          </Row>
+        </Container>
       </div>
     )
   }
